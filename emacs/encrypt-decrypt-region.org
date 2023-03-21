@@ -1,0 +1,11 @@
+** Encrypt a region in your org file:
+```bash
+ - select region to encrypt in your org file
+ - invoke epa-encrypt : M-x epa-encrypt-region
+```
+
+** Decrypt a region in your org file
+``` bash
+ - select region to decrypt in your org file
+ - invoke epa-decrypt: M-x epa-decrypt-region
+```
