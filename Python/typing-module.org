@@ -1,0 +1,6 @@
+** Typing Module
+ref: https://docs.python.org/3/library/typing.html
+ref: https://docs.python.org/3/library/typing.html#typing.Any
+
+ - provides runtime support for type hints
+ - primitive types supported:
