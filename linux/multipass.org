@@ -1,5 +1,9 @@
 ** Mount $HOME to a multipass instance
- - multipass mount $HOME <multipass-instance-name>
+ #+begin_example
+  multipass mount $HOME <multipass-instance-name>
+ #+end_example
 
 ** Unmount $HOME from a multipass instance
- - multipass umount $HOME <multipass-instance-name>
+ #+begin_example
+  multipass umount $HOME <multipass-instance-name>
+ #+end_example
