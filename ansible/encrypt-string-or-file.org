@@ -1,0 +1,27 @@
+## Encrypt a string in ansible
+
+#+begin_example
+ ansible-vault encrypt_string --vault-password-file a_password_file 'foobar' --name 'the_secret'
+#+end_example
+
+## Encrypt a file in ansible
+### create an encrypted file
+#+begin_example
+  ansible-vault create foo_bar.txt
+#+end_example
+
+### Edit an encrypted file
+#+begin_example
+  ansible-vault edit foo_bar.txt
+#+end_example
+
+
+### Encrypt an existing file
+#+begin_example
+  ansible-vault encrypt baz.yml
+#+end_example
+
+### Decrypt encrypted file
+#+begin_example
+  ansible-vault decrypt baz.yml
+#+end_example
