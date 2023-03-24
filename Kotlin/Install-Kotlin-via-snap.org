@@ -1,0 +1,24 @@
+** Install Kotlin via Snap
+  *NB:* Kotlin is ideally installed in an IDE e.g Plugin on Android Studio or IntelliJ IDEA
+
+  * you could still install the Kotlin compiler on your machine and compile a library or
+    run a REPL
+
+  #+begin_example
+    sudo snap install --classic kotlin
+  #+end_example
+
+*** confirm the installation
+  #+begin_src bash :results output
+    whereis kotlin
+  #+end_src
+
+  #+RESULTS:
+  : kotlin: /snap/bin/kotlin
+
+  #+begin_src bash :results output
+    kotlin -version
+  #+end_src
+
+  #+RESULTS:
+  : Kotlin version 1.7.21-release-272 (JRE 11.0.18+10-post-Ubuntu-0ubuntu122.04)
