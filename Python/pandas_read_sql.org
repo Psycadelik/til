@@ -1,5 +1,7 @@
 ** Pandas read_sql method
 
+ref: https://pandas.pydata.org/docs/reference/api/pandas.read_sql.html#pandas.read_sql
+
 pandas.read_sql - parameters(sql_query/table_name,  sqlalchemy connectable or sqlite3 connection)
                  - returns a DataFrame
 
