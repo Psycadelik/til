@@ -1,0 +1,17 @@
+** Pandas read_sql method
+
+pandas.read_sql - parameters(sql_query/table_name,  sqlalchemy connectable or sqlite3 connection)
+                 - returns a DataFrame
+
+ #+begin_example
+   import sqlite3
+   import pandas as pd
+
+   conn = sqlite3.connect("path/to/sqlite_db")
+
+   # we use with since it manages the connection object and closes it once done
+   with conn:
+     df = pd.read_sql("select * from bet_data", conn)
+
+ #+end_example
+
