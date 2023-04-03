@@ -1,0 +1,6 @@
+** To view a file:
+ less file.txt
+
+** go to the bottom of a file in less
+ G
+ 
