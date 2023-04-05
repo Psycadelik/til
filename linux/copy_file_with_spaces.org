@@ -1,0 +1,9 @@
+** Copying a file in Linux that contains spaces in it's name
+
+- use an asterisk in place of the spaces
+
+#+begin_src
+  file with spaces.csv
+
+  cp file*with*spaces.csv copied_file.csv
+#+end_src
