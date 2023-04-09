@@ -1,0 +1,4 @@
+# - swap Left ctrl and Caps lock
+#+begin_src bash
+  setxkbmap -option ctrl:swapcaps
+#+end_src
