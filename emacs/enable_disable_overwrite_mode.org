@@ -1,0 +1,5 @@
+#+BEGIN_EXAMPLE
+  toggle emacs overwrite mode
+
+  M-x overwrite-mode
+#+END_EXAMPLE
