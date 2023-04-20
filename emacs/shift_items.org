@@ -1,0 +1,8 @@
+#+BEGIN_EXAMPLE
+  shift items right
+  - C-u C-x <tab>
+  - C-5 C-x <tab>
+
+  shift items left
+  - C--5 C-x <tab>
+#+END_EXAMPLE
