@@ -1,0 +1,9 @@
+# Look up an organisation's email domain
+
+#+BEGIN_SRC bash :results output
+
+  $ nslookup
+  $ > set type=MX
+  $ > <organisation's domain> e.g business.co.ke
+
+#+END_SRC
