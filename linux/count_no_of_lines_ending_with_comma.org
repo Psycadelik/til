@@ -1,0 +1,5 @@
+** Count the number of lines in a csv file ending with a comma
+
+#+BEGIN_EXAMPLE
+  grep -i "[,]$" csv_file | wc -l
+#+END_EXAMPLE
