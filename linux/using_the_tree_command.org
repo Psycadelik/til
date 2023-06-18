@@ -1,0 +1,14 @@
+** To view a directory's structure:
+#+BEGIN_EXAMPLE
+  cd directory && tree
+#+END_EXAMPLE
+
+** Ignore a file when running the tree command
+#+BEGIN_EXAMPLE
+  tree -I file
+#+END_EXAMPLE
+
+** Ignore multiple files when running the tree command
+#+BEGIN_EXAMPLE
+  tree -I "file1|file2|file3"
+#+END_EXAMPLE
