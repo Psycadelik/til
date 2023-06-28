@@ -1,0 +1,10 @@
+refs:
+ - https://www.redhat.com/sysadmin/sshfs
+ - https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh
+ - https://github.com/libfuse/sshfs
+
+mount a remote folder on your folder on your local machine
+
+#+begin_example
+  sshfs -o debug,sshfs_debug user@<remote-ip>:/path/to/folder /mnt/local_mirror/
+#+end_example
