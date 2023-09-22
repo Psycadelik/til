@@ -1,0 +1,4 @@
+Change the default shell i.e /bin/sh from dash to bash
+#+begin_src bash
+  sudo ln -svf bash /bin/sh
+#+end_src
