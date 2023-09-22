@@ -1,0 +1,104 @@
+ref: https://docs.python.org/3/library/collections.html#collections.namedtuple
+
+#+name: Namedtuple Explained
+#+begin_src python :results output
+  from collections import namedtuple
+
+  Point = namedtuple("Point", ["x", "y"])
+
+  p = Point(11, y=22)
+  # fetch items by index like a normal tuple
+  #print(p[0] + p[1])
+
+  x, y = p
+  # use tuple unpacking like a regular tuple
+  #print(x, y)
+
+  # access fields by name
+  #print(p.x, p.y)
+
+  # readable __repr__ with a name=value style
+  #print(p)
+
+  """
+  # useful usecases
+  # 1. Assigning field names to result tuples returned by csv and sqlite3 modules
+  EmployeeRecord = namedtuple("EmployeeRecord", "name age title department paygrade")
+  import csv
+
+  for emp in map(EmployeeRecord._make, csv.reader(open("employees.csv", "rb"))):
+    print(emp.name, emp.title)
+
+
+  MarketsRecord = namedtuple("MarketsRecord", "market no_of_bets")
+  for market in map(MarketsRecord._make, csv.reader(open("/tmp/markets.csv", "r"))):
+    print(market.market, market.no_of_bets)
+
+  import sqlite3
+  conn = sqlite3.connect("company_data.db")
+  cursor = conn.cursor()
+  cursor.execute("select name, age, title, department, paygrade from employees")
+  for emp in map(EmployeeRecord._make, cursor.fetchall()):
+    print(emp.name, emp.title)
+  """
+
+  # tuple methods:
+  # 1. - somenamedtuple._make
+  t = [11, 22]
+  print(Point._make(t))
+
+  # 2. - somenamedtuple._asdict
+  p = Point(x=11, y=22)
+  print(p._asdict())
+
+  # 3. somenamedtuple._replace
+  p = Point(x=11, y=22)
+  p = p._replace(x=33)
+  print(p)
+
+  # 4. somenamedtuple._fields
+  print(p._fields)
+
+  # 5. somenamedtuple._field_defaults
+  Account = namedtuple("Account", ["type", "balance"], defaults=[0])
+  print(Account._field_defaults)
+  print(Account("premium"))
+
+  # getattr
+  print(getattr(p, "x"))
+
+  # convert a dictionary to a namedtuple
+  d = {"x": 11, "y": 22}
+  print(d)
+  print(Point(**d))
+
+  # change tuple functionality by subclassing the namedtuple class
+  class Point(namedtuple("Point", "x y")):
+    __slots__ = ()
+
+    @property
+    def hypot(self):
+      return (self.x ** 2 + self.y ** 2) ** 0.5
+
+    def __str__(self):
+     return "Point: x=%6.3f y=%6.3f hypot=%6.3f" % (self.x, self.y, self.hypot)
+
+  for p in Point(3, 4), Point(14, 5/7):
+    print(p)
+
+#+end_src
+
+#+RESULTS: Namedtuple Explained
+#+begin_example
+Point(x=11, y=22)
+{'x': 11, 'y': 22}
+Point(x=33, y=22)
+('x', 'y')
+{'balance': 0}
+Account(type='premium', balance=0)
+33
+{'x': 11, 'y': 22}
+Point(x=11, y=22)
+Point: x= 3.000 y= 4.000 hypot= 5.000
+Point: x=14.000 y= 0.714 hypot=14.018
+#+end_example
