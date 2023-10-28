@@ -7,3 +7,12 @@
  #+begin_example
   multipass umount $HOME <multipass-instance-name>
  #+end_example
+
+** Resize multipass vm
+- run as root
+#+begin_example
+  multipass stop <instance-name>
+
+  multipass set local.<instance-name>.disk=30G
+#+end_example
+
