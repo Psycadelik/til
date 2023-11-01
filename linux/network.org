@@ -1,0 +1,12 @@
+** Command line network manager
+#+begin_src emacs-lisp
+  (async-shell-command "nmcli dev wifi")
+#+end_src
+
+#+RESULTS:
+: #<window 117 on *Async Shell Command*>
+
+** Network diagnostic tool
+#+begin_example
+  mtr google.com
+#+end_example
