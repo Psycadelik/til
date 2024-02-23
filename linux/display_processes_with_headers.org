@@ -2,10 +2,3 @@
   ps -aux | { head -1; grep "multipass"; }
 #+end_src
 
-#+RESULTS:
-: USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-: root        8652  0.0  0.0  26044  5120 pts/1    TN   Jan29   0:00 sudo snap restart multipass.multipassd
-: root        8653  0.0  0.0  26044  1516 pts/2    SNs  Jan29   0:00 sudo snap restart multipass.multipassd
-: root        8654  0.0  0.1 1533164 20864 pts/2   TNl+ Jan29   0:00 snap restart multipass.multipassd
-: root      269386  2.0  0.5 3150952 88532 ?       SNsl 10:00   0:03 /snap/multipass/11435/bin/multipassd --verbosity debug --logger platform
-: nobody    269473  0.0  0.0  10464  4736 ?        SN   10:00   0:00 /snap/multipass/11435/usr/sbin/dnsmasq --keep-in-foreground --strict-order --bind-interfaces --pid-file --domain=multipass --local=/multipass/ --except-interface=lo --interface=mpqemubr0 --listen-address=10.74.71.1 --dhcp-no-override --dhcp-ignore-clid --dhcp-authoritative --dhcp-leasefile=/var/snap/multipass/common/data/multipassd/network/dnsmasq.leases --dhcp-hostsfile=/var/snap/multipass/common/data/multipassd/network/dnsmasq.hosts --dhcp-range 10.74.71.2,10.74.71.254,infinite --conf-file=/var/snap/multipass/common/data/multipassd/network/dnsmasq-EhksRC.conf
