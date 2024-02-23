@@ -1,0 +1,6 @@
+#+begin_example
+  c-h f package-install-file - describes the package-install-file function
+
+  M-x package-install-file - prompts for file location locally
+
+#+end_example
