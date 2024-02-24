@@ -1,0 +1,4 @@
+* Log Key-bindings in a new window
+#+begin_example
+  M-x clm/toggle-command-log-buffer
+#+end_example
