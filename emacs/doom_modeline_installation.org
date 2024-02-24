@@ -1,0 +1,21 @@
+* Doom modeline
+
+** Install Dependecies
+ - [X] nerd-icons: https://melpa.org/#/nerd-icons
+
+   #+begin_example
+     M-x package-install-file nerd-icons-20240122.644.tar
+   #+end_example
+
+
+ - [X] shrink-path: httpps://melpa.org/#/shrink-path
+
+   #+begin_example
+    M-x package-install-file shrink-path-20190208.1335.tar
+   #+end_example
+
+
+** Install doom-modeline
+   #+begin_example
+    M-x package-install-file doom-modeline-20240221.817.tar
+   #+end_example
