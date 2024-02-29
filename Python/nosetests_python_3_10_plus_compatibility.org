@@ -1,0 +1,8 @@
+#+begin_example
+  # Nosetests is no longer actively maintained
+  # However you can get nosetests compatibility with newer python versions by installing pynose
+
+  pip3 install pynose
+
+  # Now run nosetests as usual
+#+end_example
