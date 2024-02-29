@@ -2,3 +2,8 @@
 #+begin_example
   M-x clm/toggle-command-log-buffer
 #+end_example
+
+* Enable command-log-mode globally
+#+begin_example
+  M-x global-command-log-mode
+#+end_example
