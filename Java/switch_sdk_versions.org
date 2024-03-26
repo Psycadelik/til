@@ -1,0 +1,12 @@
+- Download needed JDK version from : https://www.oracle.com/java/technologies/downloads/#java17
+
+
+List all Java versions:
+#+begin_example
+  update-java-alternatives --list
+#+end_example
+
+Update to specific Java version:
+#+begin_example
+  sudo update-java-alternatives --set /usr/lib/jvm/jdk-17-oracle-x64
+#+end_example
