@@ -1,0 +1,6 @@
+Pop OS 22.04:
+#+begin_example
+$ systemctl --user restart wireplumber pipewire pipewire-pulse
+
+$ rm -r ~/.config/pulse
+#+end_example
